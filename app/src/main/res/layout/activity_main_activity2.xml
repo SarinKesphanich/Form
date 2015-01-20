@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.buu.se.s55160403.eventlog.MainActivity2">
+
+    <TextView android:text="2" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt01" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txbFname"
+        android:layout_below="@+id/txt01"
+        android:layout_alignParentStart="true"
+        android:hint="First Name" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/btn01"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/radioSex" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txbLname"
+        android:layout_below="@+id/txbFname"
+        android:layout_alignParentStart="true"
+        android:hint="Last Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/txbEmail"
+        android:layout_below="@+id/txbLname"
+        android:layout_alignParentStart="true"
+        android:hint="Email" />
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txbEmail">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Men"
+            android:id="@+id/radMan"
+            android:layout_below="@+id/txbEmail"
+            android:layout_alignParentStart="true"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Women"
+            android:id="@+id/radWomen"
+            android:checked="false"
+            android:layout_alignBottom="@+id/radMan"
+            android:layout_toEndOf="@+id/radMan" />
+    </RadioGroup>
+
+</RelativeLayout>
